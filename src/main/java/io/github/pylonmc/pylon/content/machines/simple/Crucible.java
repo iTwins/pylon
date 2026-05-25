@@ -269,7 +269,7 @@ public final class Crucible extends RebarBlock implements
 
     @Override
     public void postInitialise() {
-        createLogisticGroup("fuel", LogisticGroupType.INPUT, new LogisticSlot() {
+        createLogisticGroup("input", LogisticGroupType.INPUT, new LogisticSlot() {
             @Override
             public boolean canSet(@Nullable ItemStack stack, long amount) {
                 return stack != null && CrucibleRecipe.isValid(stack) && amount < getMaxAmount(stack);
